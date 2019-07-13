@@ -52,15 +52,16 @@ main {
   padding: 4rem;
   // height: 100%;
   min-height: calc(100vh -60px);
+
   .icons {
     margin-top: 1rem;
 
     a {
       padding: 0.4rem;
+      @include easeOut;
 
       &:hover {
         color: $secondary-color;
-        @include easeOut();
       }
     }
   }
@@ -75,7 +76,7 @@ main {
 
 .about-info {
   display: grid;
-  grip-gap: 30px;
+  grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
     "job1 job2 job3";
@@ -112,6 +113,24 @@ main {
   }
 }
 
+// Work/Project
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
 // Contact Page
 .boxes {
   display: flex;
@@ -134,24 +153,6 @@ main {
       span {
         color: set-text-color($secondary-color);
       }
-    }
-  }
-}
-
-// Work/Project
-.projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
-
-  img {
-    width: 100%;
-    border: 3px #fff solid;
-
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
     }
   }
 }
