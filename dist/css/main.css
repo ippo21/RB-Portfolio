@@ -275,10 +275,19 @@ main#home h1 {
 .boxes input,
 .boxes textarea {
   width: 100%;
+  resize: vertical;
 }
 
 .boxes button {
   width: 100%;
+}
+
+.boxes button:hover {
+  background: #d4a91c;
+  color: #000;
+}
+.boxes div:hover span {
+  color: #000;
 }
 
 .btn,
