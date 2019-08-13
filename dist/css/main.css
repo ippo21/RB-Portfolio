@@ -272,10 +272,20 @@ main#home h1 {
   margin-bottom: 16px;
 }
 
-.boxes input,
+.boxes input {
+  width: 100%;
+  padding: 8px;
+}
+
 .boxes textarea {
+  height: 100px;
   width: 100%;
   resize: vertical;
+}
+
+input[type="text"]:focus {
+  border-color: #d4a91c;
+  box-shadow: 0 0 8px 0 #d4a91c;
 }
 
 .boxes button {
