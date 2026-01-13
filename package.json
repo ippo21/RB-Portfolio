@@ -1,7 +1,7 @@
 {
   "name": "modernportfolio",
   "version": "1.0.0",
-  "description": "Rsponsive Portfolio website",
+  "description": "Responsive Portfolio Website",
   "main": "index.js",
   "homepage": "https://ippo21.github.io/RB-Portfolio",
   "scripts": {
